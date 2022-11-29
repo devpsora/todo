@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TodoApp_VanillaJS</title>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script src="https://kit.fontawesome.com/b73c1eafa0.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- 타이틀 -->
+    <h1 class="logo">todos</h1>
+    <!-- 입력 -->
+    <input class="input" type="text" placeholder="What needs to be done?" autofocus />
+    <!-- 할일 목록 -->
+    <ul class="list"></ul>
+    <!-- 통계 / 버튼 -->
+    <div class="footer" style="display: none;">
+      <span class="count">0 items left</span>
+      <ul class="state">
+        <li class="btnAll active"><a href="#">All</a></li>
+        <li class="btnActive"><a href="#">Active</a></li>
+        <li class="btnCompleted"><a href="#">Completed</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- 모달 -->
+  <div class="modal-bg" style="display: none;">
+    <div class="modal-content">
+      <span>할 일을 입력해주세요</span>
+      <button type="button" class="btnConfirm">확인</button>
+    </div>
+  </div>
+</body>
+</html>

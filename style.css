@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro';
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F5F5F5;
+}
+
+.logo {
+  width: 100vw;
+  margin: 0;
+  padding: 30px 0px;
+  text-align: center;
+  color: #EAD7D7;
+  font-size: 6rem;
+}
+
+.input {
+  width: 70vw;
+  border: 0;
+  padding: 16px 40px;
+  font-size: 1.2rem;
+  color: #4D4D4D;
+  border-bottom: 1px solid #ededed;
+}
+
+.input:focus {
+  outline: 0;
+}
+
+.input::placeholder {
+  color: #E6E6E6;
+  font-style: italic;
+}
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding-left: 0px;
+  background-color: #fff;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  padding: 16px 12px;
+  border-bottom: 1px solid #ededed;
+  word-break: break-all;
+}
+
+.list li span {
+  width: 70vw;
+  word-break: break-all;
+}
+.list li span.completed {
+  color: #acabab;
+  text-decoration: line-through;
+}
+
+.checkbox {
+  margin: 8px;
+}
+
+.delete {
+  color: #cc9a9a;
+  padding: 0.5rem;
+}
+
+.delete:hover {
+  color: #B84A5B;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  font-size: 0.9rem;
+  padding: 16px 67px 16px 13px;
+  margin-top: 0;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 20%), 0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgb(0 0 0 / 20%), 0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgb(0 0 0 / 20%);
+  background-color: #fff;
+}
+
+.count {
+  font-size: 0.7rem;
+  color: #868585;
+}
+
+.state {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-grow: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.state li {
+  border: 1px solid transparent;
+  background-color: transparent;
+  margin: 0.3rem;
+  padding: 0.3rem;
+}
+
+.state li a {
+  text-decoration: none;
+  color: #868585;
+}
+
+.state li:hover {
+  border: 1px solid #e2baba;
+  border-radius: 3px;
+  margin: 0.3rem;
+  padding: 0.3rem;
+}
+
+.state li.active {
+  border: 1px solid #cc9a9a;
+  border-radius: 3px;
+}
+
+/*==== 모달 팝업 스타일 ====*/
+.modal-bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .6);
+  z-index: 999;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 150px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.modal-content span {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  color: #868585;
+  font-size: 1.1em;
+}
+
+.btnConfirm {
+  border: 1px solid transparent;
+  background-color: #cc9a9a;
+  border-radius: 3px;
+  margin: 0.5rem;
+  padding: 0.4em;
+}
+
+.btnConfirm:focus {
+  outline: none;
+  border: 1px solid #B84A5B;
+}
